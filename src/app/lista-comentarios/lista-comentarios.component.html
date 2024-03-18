@@ -1,0 +1,18 @@
+    <h2>Lista de Comentarios:</h2>
+    <li>Comentarios Realizados</li>
+    <ul>
+        <li *ngFor="let comentario of comentarios; let i = index">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header" >
+                    Comentario {{i}}
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><span><b>Identificador post: </b>{{comentario.postId}}</span></li>
+                    <li class="list-group-item"><span><b>Numero identificador: </b>{{comentario.id}}</span></li>
+                    <li class="list-group-item"><span><b>Titulo del Post: </b>{{comentario.name}}</span></li>
+                    <li class="list-group-item"><span><b>Email: </b>{{comentario.email}}</span></li>
+                    <li class="list-group-item"><span><b>Comentario: </b>{{comentario.body}}</span></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
